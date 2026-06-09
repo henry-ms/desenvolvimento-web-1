@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conteúdos Estudados</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos próprios -->
+  <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d2b3e;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Desenvolvimento Web I</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre a Disciplina</a></li>
+          <li class="nav-item"><a class="nav-link active" href="conteudos.html">Conteúdos Estudados</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho text-center">
+    <div class="container">
+      <h1>Conteúdos Estudados</h1>
+      <p class="lead mb-0">Os principais tópicos aprendidos na disciplina</p>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+
+        <p>
+          Durante a disciplina estudamos os fundamentos do HTML, do CSS e uma introdução ao
+          JavaScript. <strong>Clique em cada tópico abaixo</strong> para ver uma breve
+          explicação sobre ele.
+        </p>
+
+        <!-- Lista de tópicos interativa (JavaScript: onclick) -->
+        <div class="list-group mt-3">
+
+          <div class="list-group-item topico" onclick="mostrarDetalhe('d1')">
+            Estrutura básica do HTML
+          </div>
+          <div id="d1" class="detalhe-topico">
+            Todo documento HTML fica entre as tags <code>&lt;html&gt;</code> e possui um
+            cabeçalho (<code>&lt;head&gt;</code>, com o <code>&lt;title&gt;</code>) e um corpo
+            (<code>&lt;body&gt;</code>), onde fica o conteúdo principal da página.
+          </div>
+
+          <div class="list-group-item topico" onclick="mostrarDetalhe('d2')">
+            Formatação de texto
+          </div>
+          <div id="d2" class="detalhe-topico">
+            Usamos tags de título <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>,
+            parágrafos <code>&lt;p&gt;</code> e estilos como negrito
+            (<code>&lt;b&gt;</code>), itálico (<code>&lt;i&gt;</code>) e sublinhado
+            (<code>&lt;u&gt;</code>) para organizar o texto.
+          </div>
+
+          <div class="list-group-item topico" onclick="mostrarDetalhe('d3')">
+            Listas
+          </div>
+          <div id="d3" class="detalhe-topico">
+            Listas ordenadas (<code>&lt;ol&gt;</code>) mostram itens numerados e listas não
+            ordenadas (<code>&lt;ul&gt;</code>) usam marcadores. Cada item é definido pela
+            tag <code>&lt;li&gt;</code>.
+          </div>
+
+          <div class="list-group-item topico" onclick="mostrarDetalhe('d4')">
+            Tabelas
+          </div>
+          <div id="d4" class="detalhe-topico">
+            Criadas com <code>&lt;table&gt;</code>, organizam dados em linhas
+            (<code>&lt;tr&gt;</code>) e células de cabeçalho (<code>&lt;th&gt;</code>) ou de
+            dados (<code>&lt;td&gt;</code>).
+          </div>
+
+          <div class="list-group-item topico" onclick="mostrarDetalhe('d5')">
+            Links e imagens
+          </div>
+          <div id="d5" class="detalhe-topico">
+            Links são feitos com a tag <code>&lt;a href="..."&gt;</code> e imagens com
+            <code>&lt;img src="..."&gt;</code>, que permitem interligar páginas e exibir
+            figuras no site.
+          </div>
+
+          <div class="list-group-item topico" onclick="mostrarDetalhe('d6')">
+            Formulários
+          </div>
+          <div id="d6" class="detalhe-topico">
+            O elemento <code>&lt;form&gt;</code> coleta dados do usuário usando campos como
+            <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code> e
+            <code>&lt;select&gt;</code>, além de botões de enviar e limpar.
+          </div>
+
+          <div class="list-group-item topico" onclick="mostrarDetalhe('d7')">
+            CSS: sintaxe e tipos
+          </div>
+          <div id="d7" class="detalhe-topico">
+            Uma regra CSS segue o formato <code>seletor { atributo: valor; }</code>. O CSS
+            pode ser externo (arquivo <code>.css</code>), interno (tag
+            <code>&lt;style&gt;</code>) ou inline (atributo <code>style</code>).
+          </div>
+
+          <div class="list-group-item topico" onclick="mostrarDetalhe('d8')">
+            CSS: margin, padding e atalhos
+          </div>
+          <div id="d8" class="detalhe-topico">
+            <strong>Margin</strong> é o espaço por fora do elemento e <strong>padding</strong>
+            o espaço por dentro. Atalhos (shorthand), como a propriedade <code>font</code>,
+            permitem definir várias propriedades em uma única linha.
+          </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="contato.html" class="btn btn-primary">Entre em contato</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape text-center">
+    <div class="container">
+      <p class="mb-0">Projeto Final &bull; Curso de Análise e Desenvolvimento de Sistemas</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JavaScript próprio -->
+  <script src="js/script.js"></script>
+</body>
+</html>

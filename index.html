@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos próprios -->
+  <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menu de navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0d2b3e;">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Desenvolvimento Web I</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre a Disciplina</a></li>
+          <li class="nav-item"><a class="nav-link" href="conteudos.html">Conteúdos Estudados</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <header class="cabecalho text-center">
+    <div class="container">
+      <h1>Desenvolvimento Web I</h1>
+      <p class="lead mb-0">Minha disciplina favorita no curso de Análise e Desenvolvimento de Sistemas</p>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Bem-vindo(a)!</h2>
+        <p>
+          Este site foi desenvolvido como projeto final da disciplina e tem como tema o
+          <strong>curso de Análise e Desenvolvimento de Sistemas do Instituto Federal</strong>,
+          com foco na disciplina de <strong>Desenvolvimento Web I</strong>.
+        </p>
+        <p>
+          Desenvolvimento Web I é a disciplina em que aprendemos a criar páginas para a
+          internet, utilizando as três principais tecnologias da web: <strong>HTML</strong>
+          para estruturar o conteúdo, <strong>CSS</strong> para estilizar e
+          <strong>JavaScript</strong> para adicionar interatividade. O próprio site que você
+          está navegando foi feito com essas tecnologias.
+        </p>
+
+        <div class="text-center my-4">
+          <img src="img/desenvolvimento-web.jpg" alt="Ilustração sobre desenvolvimento web"
+               class="img-fluid rounded shadow-sm">
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">HTML</h5>
+                <p class="card-text">A linguagem de marcação que estrutura as páginas da web.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">CSS</h5>
+                <p class="card-text">As folhas de estilo que cuidam da aparência e do layout.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <h5 class="card-title">JavaScript</h5>
+                <p class="card-text">A linguagem que deixa as páginas interativas.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-3">
+          <a href="sobre.html" class="btn btn-primary">Saiba mais sobre a disciplina</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="rodape text-center">
+    <div class="container">
+      <p class="mb-0">Projeto Final &bull; Curso de Análise e Desenvolvimento de Sistemas</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (para o menu funcionar no celular) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

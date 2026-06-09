@@ -1,0 +1,7 @@
+Coloque nesta pasta as imagens do site, com EXATAMENTE estes nomes de arquivo:
+
+1. desenvolvimento-web.jpg  -> usada na página Início (index.html)
+2. codigo.jpg               -> usada na página Sobre (sobre.html)
+
+Se trocar o nome do arquivo, lembre de trocar também no atributo src
+da tag <img> dentro do HTML correspondente.

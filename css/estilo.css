@@ -1,0 +1,52 @@
+/* Estilos adicionais do projeto - Desenvolvimento Web I */
+
+body {
+  background-color: #f4f6f8;
+  color: #2c3e50;
+}
+
+/* Cabeçalho de cada página */
+.cabecalho {
+  background: linear-gradient(135deg, #0d2b3e, #16455f);
+  color: #ffffff;
+  padding: 50px 0;
+  margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+  font-weight: bold;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #0d2b3e;
+  color: #cfd8dc;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Cartões de conteúdo */
+.card {
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de tópicos interativa (página Conteúdos) */
+.topico {
+  cursor: pointer;
+}
+
+.detalhe-topico {
+  display: none;
+  background-color: #eef3f6;
+  border-left: 4px solid #16455f;
+  padding: 12px 16px;
+  margin-top: 8px;
+}
+
+/* Mensagem de erro/sucesso do formulário */
+.mensagem {
+  display: none;
+  margin-top: 15px;
+}
