@@ -35,3 +35,10 @@ function validarFormulario() {
 
   return false; // evita recarregar a página (projeto sem servidor)
 }
+
+function limparFormulario() {
+  document.getElementById("nome").value = "";
+  document.getElementById("mensagem").value = "";
+  var aviso = document.getElementById("aviso");
+  aviso.style.display = "none";
+}
